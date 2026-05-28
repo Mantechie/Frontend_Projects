@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./todo.webp">
+    <title>To-Do Web App</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+
+<h1>To-Do Web App</h1>
+
+<div class="container">
+    <div class="form">
+        <input type="text" id="title" placeholder="Title" required>
+        <textarea id="desc" placeholder="Description" required></textarea>
+        <button onclick="addTask()">Save</button>
+    </div>
+
+    <div class="lists">
+        <h2>Pending Tasks</h2>
+        <ul id="pending"></ul>
+
+        <h2>Completed Tasks</h2>
+        <ul id="completed"></ul>
+    </div>
+</div>
+
+<script src="todo.js"></script>
+</body>
+</html>

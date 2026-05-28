@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.hero {
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.years {
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+.quote-section {
+    background: #fff;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+    gap: 40px;
+}
+
+.quote-text {
+    max-width: 400px;
+    font-size: 20px;
+}
+
+.quote-image img {
+    width: 250px;
+    border-radius: 5px;
+}
+
+.biography {
+    padding: 60px 20px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.biography h2 {
+    margin-bottom: 20px;
+}
+
+.biography p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+footer {
+    padding: 20px;
+    font-size: 14px;
+    opacity: 0.6;
+}

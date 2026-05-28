@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body onload="checkAuth()">
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2 class="logo">🚀 <span class="nav-text">Admin</span></h2>
+        </div>
+        <ul>
+            <li class="active">
+                <span class="icon">🏠</span>
+                <span class="nav-text">Dashboard</span>
+            </li>
+            <li>
+                <span class="icon">📊</span>
+                <span class="nav-text">Analytics</span>
+            </li>
+            <li>
+                <span class="icon">👥</span>
+                <span class="nav-text">Users</span>
+            </li>
+            <li>
+                <span class="icon">⚙️</span>
+                <span class="nav-text">Settings</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="nav-left">
+                <div class="hamburger" id="hamburger" onclick="toggleSidebar()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <p class="welcome">Welcome, <span id="user">User</span></p>
+            </div>
+            
+            <div class="profile">
+                <span>Account ▼</span>
+                <div class="dropdown">
+                    <a href="#" onclick="logout()">Logout</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>Dashboard Overview</h1>
+            <div class="cards">
+                <div class="card">
+                    <h3>Status</h3>
+                    <p>Active</p>
+                </div>
+                <div class="card">
+                    <h3>Security</h3>
+                    <p>High</p>
+                </div>
+                <div class="card">
+                    <h3>Server</h3>
+                    <p>99.9% Up</p>
+                </div>
+            </div>
+            <br>
+            <button class="logout-btn" onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
