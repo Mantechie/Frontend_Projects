@@ -1,0 +1,24 @@
+.loader{
+    height: 100px;
+    width: 100px;
+    border: 30px solid whitesmoke;
+    border-top: 30px solid goldenrod;
+    border-radius: 50%;
+    padding: 30px;
+    position: absolute;
+    left: 540px;
+    top: 150px;
+    animation: spin 2s linear infinite ;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
