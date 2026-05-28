@@ -1,0 +1,133 @@
+*{ /* Universal Selector*/
+  margin: 0;  /* the margin btw is 0 */
+  padding: 0; /* the padding btw is 0 */
+  font-family: "Inter", sans-serif; /* the fon family*/
+  font-optical-sizing: auto; /* the font sizing from google fonts */
+  font-weight: 500; /* the font visibility */
+  font-style: normal; /* the font style*/
+}
+
+.main_box{
+    background: url("photo.jpg"); /* the photograph */
+    height: 100vh; /* the view is 100% of the page*/
+    background-size: cover; /* the photograp cover all page */
+}
+
+.btn_one i{
+    color: white; /* the color of 3 lines*/
+    font-size: 30px; /* the font size of 3 line*/
+    font-weight: 700; /* the font weight of 3 line*/
+    position: absolute; /* the position of 3 line is absolute means acc to parent */
+    left: 16px; /* the left adjustment */
+    line-height: 60px; /* the height of the line */
+    cursor: pointer; /* the cursor is made to be like hand*/
+    transition: all 0.4s linear; /* the transition on 3 line in 0.4sec in linear way */
+}
+
+.sidebar_menu{
+    position: fixed; /* the position of sidebar menu is fixed*/
+    left: -350px; /* the negative adjust bcoz to hide */
+    height: 100vh; /*  the height view is 100% of the page*/
+    width: 300px;  /*  the width is 300px*/
+    background-color: rgba(255, 255, 255, 0.087); /*  the background color with alpha value 0.087*/
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.8); /*  the box shadow 6px blur radius and color of alpha value 0.8*/
+}
+
+.sidebar_menu .logo{
+    position: absolute; /*  the position of logo is absolute means acc to sidebar menu*/
+    width: 100%; /*  the width is 100% of page*/
+    line-height: 60px; /*  the height of line is 60px*/
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.8); /*  the box shadow 6px blur radius and color of alpha value 0.8*/
+    height: 60px;
+}
+
+.sidebar_menu .logo a{
+    position: absolute; /* the position of logo anchor tag is absolute means acc to sidebar menu*/
+    left: 50px; /*  the left adjustment*/
+    color: white; /*  the color of anchor tag of logo */
+    text-decoration: none; /*  the underline is removed */
+    font-size: 20px; /* the font size*/
+    font-weight: 500; /* the font weight*/
+}
+
+.sidebar_menu .btn_two i{
+    color: grey; /* the color*/
+    font-size: 25px; /* the font size*/
+    line-height: 60px; /* the height of line*/
+    position: absolute; /* the position of cross acc to the sidebar menu*/
+    left: 275px; /* the left adjustment*/
+    cursor: pointer; /* the cursor to be like hand when click*/
+    transition: all 0.4s linear; /* the transition on cross of 0.4sec in linear way*/
+}
+
+.sidebar_menu .menu{
+    width: 100%; /* the width is 100%*/
+    position: absolute; /* the position of menu acc to the sidebar menu*/
+    top: 80px; /* the top adjustment*/
+}
+
+.sidebar_menu .menu li{
+    margin-top: 6px; /* the margin of top of lists*/
+    padding: 14px 20px; /* the padding of top and right of lists*/
+}
+
+.sidebar_menu .menu i,a{
+    color: white; /* the color*/
+    text-decoration: none; /* the underline removed of anchor tags*/
+    font-size: 20px; /* the font size*/
+}
+
+.sidebar_menu .menu i{
+    padding-right: 8px; /* the padding of right of menu*/
+}
+
+.sidebar_menu .social_media{
+    position: absolute; /* the position of social media handles acc to sidebar menu*/
+    left: 25%; /* the left adjustment i.e. 25% of sidebar menu */
+    bottom: 25px; /* the bottom adjustment */
+}
+
+.sidebar_menu .social_media i{
+    color: white; /* the color*/
+    opacity: 0.5; /* the visibility*/
+    padding: 0.5px; /* the padding*/
+    transition: all 0.4s linear; /* the transition in 0.4 sec in linear way*/
+}
+
+.sidebar_menu .menu li:hover{
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.8); /* when hover is box shadow appear*/
+}
+
+.btn_one i:hover{
+    font-size: 40px; /* the font size when hover*/
+}
+
+.btn_two i:hover{
+    font-size: 30px; /* the font size when hover */
+}
+
+.sidebar_menu .social_media i:hover{
+    opacity: 1; /* the visibility 100% when hover*/
+    transform: scale(1.1); /* the transform scales to 1.1 of original when hover*/
+}
+
+#check:checked ~ .sidebar_menu{
+    left: 0; /* the checkbox is checked the sidebar menu hide*/
+}
+
+#check:checked ~ .btn_one i{
+    opacity: 0; /* the visibility of 3 lines when checkbox is checkbox is checked is 0 */
+}
+
+#check:checked ~ .btn_two i{
+    opacity: 1; /* the visibility of cross when checkbox is checked is 100% */
+}
+
+#check {
+    display: none; /* the checkbox is hide and perform his work*/
+}
+  
+
+
+
+
